@@ -1,15 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Myapp from './Myapp';
 import reportWebVitals from './reportWebVitals';
+import { toBePartiallyChecked } from '@testing-library/jest-dom/matchers';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+
+
+  ReactDOM.render(<Myapp />, document.getElementById('root'));
+
+// Functions
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
