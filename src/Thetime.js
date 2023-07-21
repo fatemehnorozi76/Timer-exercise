@@ -2,34 +2,49 @@ import { clear } from "@testing-library/user-event/dist/clear";
 import React  from "react";
 import  ReactDOM from "react";
 
-let intervall;
+let intervall_hour;
+let intervall_minute;
+let intervall_second;
 class Thetime extends React.Component {
     constructor() {
       super();
       this.state = {
-        time: new Date(),
-        reverseCounter :10
+       hour:0,
+       minute:0,
+       second:0
       }
     }
 
     componentDidMount(){
-      intervall= setInterval(()=>{
+      intervall_hour= setInterval(()=>{
         this.setState ({
-          time: new Date(),
-          reverseCounter : this.state.reverseCounter - 1
+          second:this.state.second + 1 ,
+        })
+      } , 60000*60)
+
+      intervall_minute= setInterval(()=>{
+        this.setState ({
+          second:this.state.second + 1 ,
+        })
+      } ,60000)
+
+      intervall_second= setInterval(()=>{
+        this.setState ({
+          second:this.state.second + 1 ,
         })
       } , 1000)
+
     }
+
+    
     componentDidUpdate(){
-      if(this.state.reverseCounter == 0){
-        clearInterval(intervall)
-      }
+     
     }
     render() {
       
   
       return (
-        <h1 className='Thetime'>{this.state.time.toLocaleTimeString()+"counter:" + this.state.reverseCounter}</h1>
+        <h1 className='Thetime'>{this.state.hour} :  {this.state.minute} : {this.state.second}</h1>
       );
     }
   }

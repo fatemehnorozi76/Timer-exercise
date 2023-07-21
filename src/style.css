@@ -25,3 +25,11 @@
    
 
 }
+.start,.stop,.reset{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: aqua;
+    color: black;
+    margin-top: 10px;
+}
