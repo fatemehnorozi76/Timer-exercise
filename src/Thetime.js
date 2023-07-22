@@ -61,8 +61,4 @@ class Thetime extends React.Component {
   }
 }
 
-
-
-
-
 export default Thetime;
