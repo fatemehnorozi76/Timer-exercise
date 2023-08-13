@@ -1,35 +1,95 @@
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    color: chocolate;
-  
-}
-.title{
-   color: rgb(228, 166, 41);
-}
-.Thetime{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    box-shadow: 1px 1px 6px #f7f7f7;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body{
     
-   
+    background-color: rgb(150, 154, 153);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 150px;
+    background-color: white;
+    width: 53%;
+    height: 40vh;
+    color: rgb(252, 245, 240);
+    margin-left: 300px;
+    direction: rtl;
+    border-radius: 10px;
+    border-radius: 50px;
 
 }
-.start,.stop,.reset{
-    width: 200px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: aqua;
-    color: black;
-    margin-top: 10px;
+
+.timer {
+    width: 350px;
+    height: 220px;
+    background-color:#F37373;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #655F5F;
+    border-radius: 40px;
+    margin-right: 20px;
+
+    
+  
+}
+
+.CurrentHour {
+    width: 300px;
+    height: 90px;
+    /* margin-top: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    color: #655F5F;
+
+}
+.CurrentDate{
+    width: 300px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #655F5F;
+    word-spacing: 20px;
+    padding-bottom: 30px;
+  
+}
+.CurrentDate h1{
+    font-size: 30px;
+}
+.start{
+background-color: white;
+border-radius: 31px;
+width: 90px;
+height: 45px;
+color: #655F5F;
+font-weight: bolder;
+font-size: large;
+margin: 10px;
+}
+.stop{
+background-color: #951A1A;
+border-radius: 31px;
+width: 90px;
+height: 45px;
+color: #655F5F;
+font-weight: bolder;
+font-size: large;
+}
+.reset{
+background-color: #98D97D;
+border-radius: 31px;
+width: 90px;
+height: 45px;
+color: #655F5F;
+font-weight: bolder;
+font-size: large;
+margin: 10px;
 }
