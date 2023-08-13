@@ -5,7 +5,6 @@ import Timer from "./Timer";
 import { useState } from "react";
 import CurrentHour from "./CurrentHour";
 import CurrentDate from "./CurrentDate";
-
 let Intervall;
 const Myapp = () => {
     const [HourTimer, setHourTimer] = useState(0);
