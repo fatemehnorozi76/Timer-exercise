@@ -1,96 +1,99 @@
-body{
-    
-    background-color: rgb(150, 154, 153);
+body {
+    background-color: #2a707a;
 }
 
+@font-face {
+    font-family: Demi;
+    src: url(./assets/font/Mj_Thameen\ DemiBold.ttf)
+}
 .main {
     display: flex;
     align-items: center;
     /* justify-content: center; */
     margin-top: 150px;
-    background-color: white;
-    width: 53%;
-    height: 40vh;
+    background-color: rgb(183, 232, 231);
+    width: 1264px;
+    height: 358px;
     color: rgb(252, 245, 240);
-    margin-left: 300px;
+    margin-left: 50px;
     direction: rtl;
-    border-radius: 10px;
-    border-radius: 50px;
-
+    border-radius: 57px;
 }
-
 .timer {
-    width: 350px;
-    height: 220px;
-    background-color:#F37373;
-    margin-top: 35px;
+    width: 534px;
+    height: 314px;
+    background-color: #F37373;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 80px;
     color: #655F5F;
-    border-radius: 40px;
+    border-radius: 57px;
     margin-right: 20px;
-
-    
-  
 }
-
+.Timer_title{
+   width: 485.03px;
+   height: 91.21px;
+   margin-right: 150px;
+   font-size: 80px;
+   font-weight: lighter;
+   word-spacing: 30px;
+}
 .CurrentHour {
-    width: 300px;
-    height: 90px;
-    /* margin-top: 500px; */
+    width: 719.41px;
+    height: 163.21px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 55px;
+    font-size: 140px;
+    font-weight: light;
     color: #655F5F;
-
 }
-.CurrentDate{
-    width: 300px;
+.CurrentDate {
+    width: 719.41px;
     height: 90px;
     display: flex;
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #655F5F;
-    word-spacing: 20px;
-    padding-bottom: 30px;
-  
+    font-size: 50px;
+    word-spacing: 50px;
+    margin-top: 30px;
 }
-.CurrentDate h1{
-    font-size: 30px;
+.CurrentDate_Number{
+    word-spacing: 100px;
+    margin-right: 20px;
 }
-.start{
-background-color: white;
-border-radius: 31px;
-width: 90px;
-height: 45px;
-color: #655F5F;
-font-weight: bolder;
-font-size: large;
-margin: 10px;
+.start {
+    background-color: white;
+    border-radius: 31px;
+    width: 147px;
+    height: 62px;
+    color: #655F5F;
+    font-weight: bolder;
+    font-size: large;
+    margin: 10px;
 }
-.stop{
-background-color: #951A1A;
-border-radius: 31px;
-width: 90px;
-height: 45px;
-color: #655F5F;
-font-weight: bolder;
-font-size: large;
+.stop {
+    background-color: #951A1A;
+    border-radius: 31px;
+    width: 147px;
+    height: 62px;
+    color: #655F5F;
+    font-weight: bolder;
+    font-size: large;
 }
-.reset{
-background-color: #98D97D;
-border-radius: 31px;
-width: 90px;
-height: 45px;
-color: #655F5F;
-font-weight: bolder;
-font-size: large;
-margin: 10px;
+.reset {
+    background-color: #98D97D;
+    border-radius: 31px;
+    width: 147px;
+    height: 62px;
+    color: #655F5F;
+    font-weight: bolder;
+    font-size: large;
+    margin: 10px;
 }

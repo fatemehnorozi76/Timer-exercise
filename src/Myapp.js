@@ -11,9 +11,9 @@ const Myapp = () => {
     const [MinuteTimer, setMinuteTimer] = useState(59);
     const [SecondTimer, setSecondTimer] = useState(56);
     const [isstartFlag, setisstartFlag] = useState(true);
-    const [Day, setDay] = useState(new Date().getDay());
-    const [Month, setMonth] = useState(new Date().getMonth());
-    const [Year, setYear] = useState(new Date().getFullYear());
+    const [Day, setDay] = useState(0);
+    const [Month, setMonth] = useState(0);
+    const [Year, setYear] = useState(0);
     const [currentHour, setCurrentHour] = useState(new Date().getHours());
     const [currentMinute, setCurrentMinute] = useState(new Date().getMinutes());
     const [currentSecond, setCurrentSecond] = useState(new Date().getSeconds());
@@ -43,24 +43,13 @@ const Myapp = () => {
             setMonth(new Date().getMonth());
             setDay(new Date().getDay());
 
-            if (SecondTimer == 60) {
-                setSecondTimer(0);
-                setMinuteTimer(a => a + 1);
-            }
-            if (MinuteTimer == 60) {
-                setMinuteTimer(0);
-                setHourTimer(a => a + 1);
-            }
-            if (HourTimer == 60) {
-                reset_Timer();
-            }
-
         }, 1000);
 
         return () => clearInterval(interval);
     }, [currentHour, currentMinute, currentSecond,
-        Day, Month, Year,]);
+        Day, Month, Year]);
 
+    
     // useEffect
     /////////////////////////////////////////////////////////////
 
@@ -111,7 +100,6 @@ const Myapp = () => {
                 <CurrentDate
                     Day={`${Day > 9 ? Day : "0" + Day + "    "}`}
                     Month={`${Month > 9 ? Month : "0" + Month + "   "}`}
-                    
                     Year={`${Year > 9 ? Year : "0" + Year + "   "}`}
                 />
 
